@@ -1,4 +1,4 @@
-import { Macro } from 'src/recipes/models/macro';
+import { Macro } from './macro';
 
 export interface RecipeDict {
   id: number;
