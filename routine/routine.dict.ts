@@ -2,27 +2,27 @@ import { ExerciseDict } from '../exercise/exercise.dict';
 import { MindDict } from '../mind/mind.dict';
 import { RecipeDict } from '../recipe/recipe.dict';
 
-interface MealItem {
+export interface MealItem {
   time: string;
   mealTaken: boolean;
   recipeDicts: RecipeDict[];
 }
 
-interface MindItem {
+export interface MindItem {
   time: string;
   mindDicts: MindDict[];
 }
 
-interface ExerciseItem {
+export interface ExerciseItem {
   time: string;
   exerciseDicts: ExerciseDict[];
 }
 
 export interface RoutineDict {
   id: number;
-  date: string;
-  userId: number;
-  mealItems: MealItem[];
-  mindItems: MindItem[];
-  exerciseItems: ExerciseItem[];
+  date?: string;
+  userId?: number;
+  meals?: MealItem[];
+  minds?: MindItem[];
+  exercises?: ExerciseItem[];
 }
