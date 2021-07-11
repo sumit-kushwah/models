@@ -5,7 +5,7 @@ export interface WeeklyDietDict {
   id: number;
   name?: string;
   conditions?: string[];
-  dietPreference?: 'veg' | 'vegan' | 'non-veg';
+  dietPreference?: string;
   firstMajorFood?: string;
   secondMajorFood?: string;
   target?: string;
@@ -14,7 +14,7 @@ export interface WeeklyDietDict {
   mainNote?: Note;
   submitter?: { name: string; id: number };
   approver?: { name: string; id: number };
-  status?: 'pending' | 'approved';
+  status?: 'pending' | 'approved' | 'review';
   dailyDiets?: DailyDiet[];
   notes?: Note[];
 }
