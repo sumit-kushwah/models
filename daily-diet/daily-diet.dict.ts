@@ -6,7 +6,7 @@ export interface DailyDietDict {
   name?: string;
   submitter?: { name: string; id: number };
   approver?: { name: string; id: number };
-  status?: 'pending' | 'approved';
+  status?: 'pending' | 'approved' | 'review';
   meals?: Meal[];
   notes?: Note[];
 }
