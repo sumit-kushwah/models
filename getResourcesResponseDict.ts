@@ -1,7 +1,13 @@
 export interface Paging {
   limit: number;
   page: number;
-  pages: number;
+  total: number;
+}
+
+export class PagingImp implements Paging {
+  limit = 10;
+  page = 0;
+  total = 0;
 }
 
 export interface GetResourcesResponseDict {
