@@ -3,8 +3,10 @@ import { MindDict } from '../mind/mind.dict';
 import { RecipeDict } from '../recipe/recipe.dict';
 
 export interface MealItem {
+  mealId: number;
   time: string;
   mealTaken: boolean;
+  mealNote: string;
   recipeDicts: RecipeDict[];
 }
 
