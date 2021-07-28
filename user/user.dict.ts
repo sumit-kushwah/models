@@ -12,6 +12,9 @@ export interface UserDict {
   gender?: 'male' | 'female';
   dob?: string;
   country?: string;
+  photoURL?: string;
+  physicalInjuries?: string[];
+  medicalConditions?: string[];
   subscription?: SubscriptionDict;
   counselling?: CounsellingDict;
   assignedAdmins?: AssignedAdminsDict;
